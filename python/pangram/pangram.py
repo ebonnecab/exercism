@@ -1,2 +1,7 @@
 def is_pangram(sentence):
-    pass
+    alpha = "abcdefghijklmnopqrstuvwxyz"
+    for letter in alpha:
+        if letter not in sentence.lower():
+            return False
+
+    return True
